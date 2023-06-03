@@ -1,0 +1,85 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-bg);
+    font-family: var(--primary-font);
+    position: relative;
+    z-index: -3;
+}
+.wrapper{
+    max-width: var(--body-size);
+    margin: 0 auto;
+    background-color: var(--wrapper-bg);
+    position: relative;
+    z-index: -2;
+}
+.container{
+    max-width: var(--container);
+    padding: 0 var(--gap);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.w-500{
+    font-weight: 500;
+}
+.w-700{
+    font-weight: 700;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0;
+}
+
+.btn-large{
+    width: 237px;
+}
+
+/* COLOR CLOTHE*/
+.bg-pp{
+    background-color: var(--purple-color);
+}
+
+.bg-bl{
+    background-color: var(--blue-color);
+}
+.bg-or{
+    background-color: var(--orange-color);
+}
+.bg-wt{
+    background-color: var(--white-color);
+}

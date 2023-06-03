@@ -1,0 +1,102 @@
+.product{
+    margin-top: 15px;
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &__heading{
+        width: 600px;
+        margin-bottom: 55px;
+    }
+    &__detail{
+        max-width: 654px;
+        background-color: var(--white-color);
+        border-radius: 16px;
+        padding: 32px 32px 32px 40px;
+        position: relative;
+        img{
+            width: 20px;
+            height: 22px;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            p:first-child{
+                margin-bottom: 23px;
+            }
+            p:not(:first-child){
+                padding-left: 15px;
+            }
+            p{
+                margin-bottom: 17px;
+            }
+
+        }
+        button{
+            margin-top: 5px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 26px;
+            height: 126px;
+            background-color: var(--d4-color);
+            position: absolute;
+            top: -34px;
+            left: 13px;
+            opacity: 0.7;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__right{
+        position: absolute;
+        top: 26px;
+        right: 140px;
+
+    }
+}
+
+@include maxWith(576px){
+    .product{
+        flex-direction: column-reverse;
+        padding: 0 24px;
+
+        &__left{
+            margin-top: 100px;
+        }
+        &__heading{
+            width: auto;
+            text-align: justify;
+            margin-bottom: 32px;
+            h1{
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        
+        &__detail{
+            padding: 28px 16px 16px 16px;
+
+            &::after{
+                width: 18px;
+                height: 86px;
+                top: -24px;
+                left: 7px;
+            }
+
+            button{
+                width: 100%;
+            }
+        }
+
+
+        &__right{
+            position: relative;
+            top: 64px;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+}

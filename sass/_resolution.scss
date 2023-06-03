@@ -1,0 +1,60 @@
+.resolution{
+    position: relative;
+    &__left{
+        width: 530px;
+    }
+
+    &__right{
+        width: 390px;
+        margin-top: 5px;
+    }
+    &__top{
+        display: block;
+        height: 735px;
+        width: 100%;
+        position: absolute;
+        top: 36px;
+        left: -105px;
+        background-image: url("../images/background-resolution.png");
+        background-repeat:no-repeat;
+    }
+    &__bottom{
+        display: flex;  
+        justify-content: space-between;
+        margin-top: 93px;
+        height: calc(735px + 36px);
+    }
+}
+
+@include maxWith(576px) {
+    .resolution{
+        padding: 24px;
+        overflow: hidden;
+        &__top{
+            display: block;
+            background-size: 886.65px 495.45px;
+            background-position: center;
+            position: relative;
+            height: 495px;
+            width: 886px;
+            left: -328px;
+            
+        }
+        &__bottom{
+            flex-direction: column;
+            height: auto;
+            text-align: justify;
+            margin-top: 50px;
+        }
+        &__left{
+            width: auto;
+        }
+        &__title{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__right{
+            width: auto;
+        }
+    }
+}
